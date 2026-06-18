@@ -2026,7 +2026,7 @@
 			(layers "F.Cu" "F.Paste")
 			(net 55 "/PROG_3")
 			(pinfunction "6")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "62e77212-abd8-4af3-be9e-32a6f7224ffe")
 		)
 		(pad "7" smd rect
@@ -2044,7 +2044,7 @@
 			(layers "F.Cu" "F.Paste")
 			(net 56 "/PROG_4")
 			(pinfunction "8")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "86e88094-c8a6-4c62-9701-c2f060e41989")
 		)
 		(pad "9" smd rect
@@ -2062,7 +2062,7 @@
 			(layers "F.Cu" "F.Paste")
 			(net 57 "/PROG_5")
 			(pinfunction "10")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "f074e80d-2c21-4856-bf46-807484a42f5d")
 		)
 		(pad "11" smd rect
