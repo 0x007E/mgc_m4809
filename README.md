@@ -17,7 +17,7 @@ The `ATmega4809` (`mgc_module`) is an adaptable board for the [MeGARCard](https:
 | Schematic | [pdf](https://github.com/0x007E/mgc_m4809/releases/latest/download/schematic.pdf) / [cadlab](https://cadlab.io/project/30419/main/files)                   | Schematic files |
 | Board     | [pdf](https://github.com/0x007E/mgc_m4809/releases/latest/download/pcb.pdf) / [cadlab](https://cadlab.io/project/30419/main/files)                         | Board file      |
 | Drill     | [pdf](https://github.com/0x007E/mgc_m4809/releases/latest/download/drill.pdf)                                                                              | Drill file      |
-| BoM | [xlsx](https://github.com/0x007E/mgc_m4809/releases/latest/download/bom.xlsx) / [html](https://github.com/0x007E/mgc_m4809/releases/latest/download/bom.html)          | Bill of Material as Excel/interactive HTML |
+| BoM | [xlsx](https://github.com/0x007E/mgc_m4809/releases/latest/download/bom.xlsx) / [html](https://github.com/0x007E/mgc_m4809/releases/latest/download/ibom.html)          | Bill of Material as Excel/interactive HTML |
 | PCB    | [zip](https://github.com/0x007E/mgc_m4809/releases/latest/download/kicad.zip) / [tar](https://github.com/0x007E/mgc_m4809/releases/latest/download/kicad.tar.gz)    | KiCAD/Gerber/BoM/Drill files       |
 
 # Hardware
