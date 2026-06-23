@@ -30,15 +30,6 @@ preflight:
     - filter: 'Missing connection between items'
       error: 'unconnected_items'
       regex: 'Missing connection between items'
-    # - filter: 'Silkscreen clipped by solder mask'
-    #   error: 'silk_over_copper'
-    #   regex: 'Silkscreen clipped by solder mask'
-    # - filter: 'Silkscreen overlap'
-    #   error: 'silk_overlap'
-    #   regex: 'Silkscreen overlap'
-    # - filter: 'Silkscreen edge clearance'
-    #   error: 'silk_edge_clearance'
-    #   regex: 'Silkscreen clipped by board edge'
   
   set_text_variables:
     - name: 'date'
@@ -50,6 +41,7 @@ outputs:
     type: bom
     dir: './bom'
     options: &bom_options
+      output: 'bom.%x'
       xlsx:
         datasheet_as_link: MFP
         max_col_width: 40
@@ -70,10 +62,10 @@ outputs:
     type: ibom
     dir: './ibom'
     options:
-      output: 'IBOM.%x'
+      output: 'ibom.%x'
       layer_view: 'FB'
-      # bom_view: 'left-right'
-      bom_view: 'top-bottom'
+      bom_view: 'left-right'
+      # bom_view: 'top-bottom'
       include_tracks: false
       show_fields: 'Value,Footprint,HTL,DigiKey'
 
@@ -82,6 +74,7 @@ outputs:
     type: pdf_sch_print
     dir: './schematic'
     options:
+      output: 'schematic.%x'
       monochrome: true
 
   - name: print_pcb
@@ -92,9 +85,9 @@ outputs:
       force_edge_cuts: true
       keep_temporal_files: false
       format: 'PDF'
-      output : 'PCB.%x'
+      output : 'pcb.%x'
       plot_sheet_reference: true
-      scaling: 1.0
+      scaling: 2.0
       pages:
         - layers:
           - layer: F.Cu
@@ -168,7 +161,9 @@ outputs:
     type: excellon
     dir: './drill'
     options:
+      output: 'drill.%x'
       map:
+        output: 'drill.%x'
         type: pdf
       pth_and_npth_single_file: true
       
